@@ -3,8 +3,12 @@ var clockRunning = false;
 var intervalId;
 
 // Create start button
-$("#start").click(timer.start);
-$("#reset").click(timer.reset);
+$("#start").on("click", function() {
+    timer.start;
+});
+$("#reset").on("click", function() {
+    timer.reset;
+});
 // multiple choice or true/false
 
 // declare timer as a object variable with a start and stop function
@@ -40,7 +44,7 @@ var timer = {
         //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
         //        and save the result in a variable.
         
-        var currentTime = stopwatch.timeConverter(timer.time)
+        var currentTime = timer.timeConverter(timer.time)
     
         //  TODO: Use the variable you just created to show the converted time in the "display" div.
         $("#display").html(currentTime);
