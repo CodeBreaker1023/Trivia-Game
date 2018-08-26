@@ -13,7 +13,7 @@
     <!-- Google font link -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <!-- Linking CSS -->
-    <link rel="stylesheet" type="text/css" href="style-trial.css"> 
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> 
 
 </head>
 
@@ -28,14 +28,16 @@
         <div class="wrapper">
             <div class="row timerBox">
                 <h2> TIMER </h2>
-                <div id="time-left"></div>
+                <div id="display">05:00</div>
             </div>
             <div class="row questionBox">
                 <div class="questionnaire"></div>
             </div>
             <div class="row answerBox">
-                <button class='newGame'>New Game</button>
-                <button class="submitButton">Submit</button>
+            </div>
+            <div class="buttons">
+                <button id="start">Start Timer</button>
+                <button id="reset">New Game</button>
             </div>
         </div>
      
@@ -46,7 +48,7 @@
 
     <!-- LINK game.js -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="game.js"></script>
+    <script src="Assets/javascript/game.js"></script>
    
 </body>
 </html>
