@@ -1,6 +1,80 @@
 body {
-    background-color: gray;
+    background-image: url("http://dailyutahchronicle.com/wp-content/uploads/2018/06/Disney-768x432.jpg");
     background-position: center;
     background-size: 100%;
-    background-position-y: 10px;
+    background-position-y: 0px;
+    align-content: center;
+}
+
+.headerTitle {
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.headerP {
+    font-size: 16px;
+    margin: 20x auto 20px auto;
+    color: blue;    
+    padding: 0px;
+    border: 2px solid black;
+    background-color: white;
+    opacity: .8;
+}
+
+.timerBox {
+    margin: 20px auto 0px auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.timerTitle {
+    margin: 20px auto 0px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#display {
+    background-color: white;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    font-size: 30px;
+}
+
+.questionBox {
+    background-color: white;
+    border: 2px solid black;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    opacity: .8;
+}
+
+.answerBox {
+    background-color: white;
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    opacity: .8;
+}
+
+.buttons {
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+#start {
+    background-color: pink;
+}
+
+#reset {
+    background-color: pink;
 }

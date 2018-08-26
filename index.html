@@ -18,25 +18,30 @@
 </head>
 
 <body>
-    <!-- MK Header-->
+    <!-- Trivia Game Header-->
     <header class="headerTitle">
         <h1>Disney Trivia Game</h1>
+        <p class="headerP">
+            Welcome to the Disney Trivia Game! Put your knowledge of Disney to the test. You have 5 minutes to answer as many Disney questions as possible. When the
+            <br>
+            time runs out, the game stops and you will be unable to answer the remaining questions for additional points. Hit 'New Game' to start over. Good luck!
+        </p>
     </header>
 
     <!-- page container-->
     <div class="container">
         <div class="wrapper">
             <div class="row timerBox">
-                <h2> TIMER </h2>
-                <div id="display">05:00</div>
+                <h2 class="timerTitle"> TIMER </h2>
             </div>
+            <div id="display">05:00</div>
             <div class="row questionBox">
-                <div class="questionnaire"></div>
+                <span class="questionnaire"></span>
             </div>
             <div class="row answerBox">
             </div>
             <div class="buttons">
-                <button id="start">Start Timer</button>
+                <button id="start">Start Game</button>
                 <button id="reset">New Game</button>
             </div>
         </div>
