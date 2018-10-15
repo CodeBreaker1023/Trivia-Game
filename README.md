@@ -1,1 +1,15 @@
 # Trivia-Game
+
+////////////////////////////////////////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////////////////////////////////////////////////////////////
+
+Welcome to the Disney Trivia Game!
+
+Test your knowledge of Disney movies in this timed multiple choice trivia game.
+Read each question carefully and select the options below it. But remember, you
+are on the clock. Any questions not answered will be lost point opportunities.
+
+////////////////////////////////////////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////////////////////////////////////////////////////////////

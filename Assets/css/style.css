@@ -64,6 +64,19 @@ body {
     text-align: center;
     margin: 20px auto 20px auto;
     opacity: .8;
+    font-size: 200%;
+}
+
+.answer {
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-size: 200%;
+}
+
+#questionnaire{
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-size: 200%;
 }
 
 .buttons {

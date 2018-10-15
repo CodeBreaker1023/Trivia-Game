@@ -22,35 +22,42 @@
     <header class="headerTitle">
         <h1>Disney Trivia Game</h1>
         <p class="headerP">
-            Welcome to the Disney Trivia Game! Put your knowledge of Disney to the test. You have 5 minutes to answer as many Disney questions as possible. When the
+            Welcome to the Disney Trivia Game! Put your knowledge of Disney to the test. You have 30 seconds to answer each Disney question. When the time runs 
             <br>
-            time runs out, the game stops and you will be unable to answer the remaining questions for additional points. Hit 'New Game' to start over. Good luck!
+            out, the game stops and you will be unable to answer the question. When all questions have been answered, hit 'New Game' to start over. Good luck!
         </p>
     </header>
 
     <!-- page container-->
     <div class="container">
         <div class="wrapper">
+            
+            <!-- Timer -->
             <div class="row timerBox">
                 <h2 class="timerTitle"> TIMER </h2>
             </div>
-            <div id="display">00:30</div>
+            <div id="display">30</div>
+            
             <div class="row questionBox">
-                <form action="">
-                <div id="1">
-                    <P>Question one</p>
-                    <input type="radio" name="gender" value="male"> Male<br>
-                    <input type="radio" name="gender" value="female"> Female<br>
-                    <input type="radio" name="gender" value="other"> Other
-                </div>
-                </form>
-                            
+                <div id="questionnaire"></div>           
             </div>
             <div class="row answerBox">
-                <span class="answer"></span>
+                <!-- <form action="">
+                    <div id="questionnaire">
+                        <p>Question:</p>
+                        <input type="radio" name="gender" value="male">1<br>
+                        <input type="radio" name="gender" value="female">2<br>
+                        <input type="radio" name="gender" value="other">3<br>
+                    </div>
+                </form>    -->
+                <!-- <form>
+                    What's Your Guess:<br>
+                    <input type="text" name="guess" id="guess" value="">
+                </form> -->
             </div>
             <div class="buttons">
                 <button id="start">Start Game</button>
+                <button id="submit" value="Guess" class="btn">Submit Answer</button>
                 <button id="reset">New Game</button>
             </div>
         </div>
