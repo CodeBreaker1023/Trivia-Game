@@ -11,9 +11,10 @@ var questionArray = [
         // 1: "(a) Prince Phillip",
         // 2: "(b) Prince Florian",
         // 3: "(c) Prince Charming",
-        choices: ["(a) Prince Phillip", "(b) Prince Florian", "(c) Prince Charming"],
-        answer: "(b) Prince Florian",
-        image: "assets/images/prince_phillip.jpg"
+        choices: ["Prince Phillip", "Prince Florian", "Prince Charming"],
+        answer: "Prince Florian",
+        image: "assets/images/prince_phillip.jpg",
+        name: "Q1"
     },
     {
         prompt: "In the Lion King, what is Simba's mother's name?",
@@ -132,25 +133,56 @@ function printQuestion() {
 function printAnswers() {
     for (i=0; i < 3; i++){
         var answerChoices = questionArray[counter].choices[i];
-        $(".answerBox").append(questionArray[counter].choices[i]);
+        //var r = $("<input type='radio' name=" + questionArray[counter].name + " value=" +answerChoices +">" + answerChoices +"<br />");
+        var r = $("<input type='radio'>" + answerChoices +"<br />");
+        r.attr("name",questionArray[counter].name);
+        r.attr("value",answerChoices);
+        //$(".answerBox").append(questionArray[counter].choices[i]);
+        //var r = $('input type="radio" class="radioBtnClass" value=' +answerChoices + ' name=' +questionArray[counter].name + ' />' + "  " + answerChoices );
+        $(".answerBox").append(r);
         console.log(answerChoices);
     }
     counter++;
     console.log("Counter Number: " + counter);
 }
 
-function checkAnswer() {
-    var guess = document.getElementById('guess');
-    var guessValue = guess.value;   
-    console.log(guessValue);
+// function checkAnswer() {
+//     var guess = document.getElementById('guess');
+//     var guessValue = guess.value;   
+//     console.log(guessValue);
     
-    // check guess with answer
-    if (guessValue === ) {
-    }
-}
+//     // check guess with answer
+//     if (guessValue === ) {
+//     }
+// }
 
-$("#submit").on("click", function {
-    checkAnswer();
+$("#submit").on("click", function() {
+   // checkAnswer();
+   $("#questionnaire").empty();
+   $(".answerBox").empty();
+   var checkQ1 = $("input[name='Q1']:checked").val();
+   var ans = [];
+  // var uAns = [checkQ1,checkQ2];
+//    for(var i=0;i<questionArray.length;i++){
+//        ans.push(questionArray[i].answer);
+//    }
+//    for(var i =0;i<questionArray.length;i++)
+//    {
+//     if(ans[i] === uAns[i])
+//     {
+//         correct++
+//     }
+//     else if(uAns[i] === "undefined"){
+//         unanswered++;
+//     }
+//     else{
+//         incorrect++;
+//     }
+//    }
+   printQuestion();
+   printAnswers();
+       
+      
 })
 
 
